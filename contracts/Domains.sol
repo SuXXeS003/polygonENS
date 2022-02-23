@@ -82,11 +82,11 @@ contract Domains is ERC721URIStorage {
         uint len = StringUtils.strlen(name);
         require(len > 0);
         if(len == 3) {
-            return 0.5 * 10**17;
+            return 0.005 * 10**17;
         } else if (len == 4) {
-            return 0.3 * 10**17;
+            return 0.003 * 10**17;
         } else {
-            return 0.2 * 10**17;
+            return 0.002 * 10**17;
         }
     }
 
